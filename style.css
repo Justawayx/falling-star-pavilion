@@ -1,0 +1,201 @@
+@font-face {
+    font-family: "Helvetica Neue Ext";
+    src: url('fonts/helvetica-ext.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url('fonts/helvetica-light.ttf')  format('truetype');
+}
+
+hr {
+	border: 0.5px solid white;
+	background-color: white;
+}
+
+body {
+	color: white;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	background: linear-gradient( rgba(0, 0, 0, 0.22), rgba(0, 0, 0, 0.1) ), url('img/fsp.png');
+	background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h2 {
+	padding-top: 20px;
+}
+
+p, li {
+	text-shadow: 1px 1px 1.5px #000;
+	font-size: 16px;
+}
+
+#content li {
+	padding-bottom: 6px;
+}
+
+a {
+	color: #9bc1e0;
+}
+
+button {
+	/* Remove button default styling */
+	background: none;
+	border: none;
+	border: none;
+	font: inherit;
+	outline: inherit;
+	cursor: pointer;
+}
+
+table {
+	margin: 30px 0px;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 24px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+th, td {
+	padding: 6px;
+}
+
+#header {	
+	margin: 5px;
+	padding: 20px;
+	white-space: pre-line;
+	border: 1px solid white;
+}
+
+#header a {
+	color: #ffffff;
+	font-family: "Helvetica Neue Ext";
+	font-size: 24px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.special-block {
+	margin: 30px 0px;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 4px 24px;
+	border-radius: 5px;
+}
+
+.page-title {
+	font-size: 28px;
+	padding-top: 30px;
+}
+
+.sidebar {
+	height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.intro {
+	text-align: left;
+	padding-top: 50px;
+	text-shadow: 1px 1px 1.5px #000;
+}
+
+.intro p {
+	font-size: 16px;
+}
+
+.big-link {
+	width: 200px;
+	border: 1px solid white;
+	padding: 20px;
+	margin: 14px 0px;
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.big-link button {
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+	font-size: 20px;
+}
+
+input:focus, textarea:focus {
+    background: #eee;
+}
+
+#nav {
+	float: left;
+	width: 200px;
+}
+
+#content {
+	margin-left: 200px;
+	margin-right: 25%;
+}
+
+.sidenav {
+  margin: 5px;
+  padding: 5px;
+	background-color: rgba(0, 0, 0, 0.3);
+	flex-grow: 1;
+	border-radius: 5px;
+}
+
+.sidenav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.sidenav li button {
+	display: block;
+	padding: 16px 16px;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+}
+
+.sidenav li button:hover {
+	color: #9bc1e0;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  overflow: hidden;
+}
+
+.panel li button {
+	display: block;
+	margin-left: 20px;
+	padding: 0px 0px 0px 8px;
+	text-decoration: none;
+	font-weight: normal;
+	border-left: 1px solid white;
+	color: white;
+}
+
+#top-btn {
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: none; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px 15px; /* Some padding */
+  border-radius: 30px; /* Rounded corners */
+  font-size: 20px; /* Increase font size */
+}
+
+#top-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
