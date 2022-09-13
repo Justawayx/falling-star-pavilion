@@ -5,11 +5,27 @@
 <head>
 <title>Falling Star Pavilion</title>
 <link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="fsp-scripts.js"></script>
 </head>
 <body>	
-	<!-- Sidebar -->
+	<!-- Top navigation (small screens) -->
+	<div class="topnav">
+		<div id="topnav-main">
+			<a href="javascript:void(0);" class="nav-icon" onclick="topNavToggle()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+		<!-- Navigation links (hidden by default) -->
+		<div id="topnav-links">
+			<a href="/btth.html">BTTH Subbed</a>
+			<a href="/starfall.html">Starfall Bot</a>
+			<a href="/contact.html">Contact</a>
+		</div>
+	</div>
+	
+	<!-- Sidebar (large screens) -->
 	<div class="sidebar">
 		<div id="header"><a href="/index.html">Falling Star Pavilion</a></div>
 		<div class="sidenav">

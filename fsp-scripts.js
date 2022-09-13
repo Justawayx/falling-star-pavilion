@@ -4,6 +4,8 @@ function updateContentAndURL(html_fname) {
 			var new_doc = new DOMParser().parseFromString(new_html, "text/html");
 			var new_content = new_doc.getElementById("content").innerHTML;
 			$("#content").html(new_content);
+			document.body.scrollTop = 0; // For Safari
+			document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 			window.history.pushState({"html":new_html}, "", html_fname);
 		})
 	}
@@ -44,4 +46,14 @@ let mybutton = document.getElementById("top-btn");
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function topNavToggle() {
+  var x = document.getElementById("topnav-links");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
 }
