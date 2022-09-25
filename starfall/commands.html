@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="fsp-scripts.js"></script>
+<script src="/fsp-scripts.js"></script>
 </head>
 <body>	
 	<!-- Top navigation (small screens) -->
@@ -52,7 +52,122 @@
 	<!-- Page Content -->
 	<div id="content">
 		<h1 class="page-title">Starfall Commands</h1>
-		<p>WIP</p>
+		<div>
+			<button onclick="commandClear()">🌠</button>
+			<input type="text" id="command-search" onkeyup="commandSearch()" placeholder="Filter commands...">
+		</div>
+				
+		<!-- All the comands -->
+		<div id="commands">
+			<div id="alchemy" class="special-block">
+			<div class="command-name"><h3>/alchemy</h3></div>
+				<p>Show alchemy rank card.</p>
+			</div>
+			<div id="balance" class="special-block">
+				<div class="command-name"><h3>/balance</h3></div>
+				<p>Show balance for specified currency (default is gold).</p>
+			</div>
+			<div id="beast hunt" class="special-block">
+				<div class="command-name"><h3>/beast hunt</h3></div>
+				<p>Attempt to hunt a beast, granting reward for successful hunt. Costs 12 energy.</p>
+			</div>
+			<div id="breakthrough" class="special-block">
+				<div class="command-name"><h3>/breakthrough</h3></div>
+				<p>Attempt breakthrough to the next sublevel.</p>
+			</div>
+			<div id="buy" class="special-block">
+				<div class="command-name"><h3>/buy</h3></div>
+				<p>Buy item(s) if it is purchasable and user has sufficient gold.</p>
+			</div>
+			<div id="consume" class="special-block">
+				<div class="command-name"><h3>/consume</h3></div>
+				<p>Attempt to consume a pill.</p>
+			</div>
+			<div id="cultivate" class="special-block">
+				<div class="command-name"><h3>/cultivate</h3></div>
+				<p>Prompt a question that grants EXP if answered correctly.</p>
+			</div>
+			<div id="daily" class="special-block">
+				<div class="command-name"><h3>/daily</h3></div>
+				<p>Request daily stipend (reward amount is randomized and increases with cultivation class.)</p>
+			</div>
+			<div id="energy" class="special-block">
+				<div class="command-name"><h3>/energy</h3></div>
+				<p>Show current amount of energy.</p>
+			</div>
+			<div id="equip" class="special-block">
+				<div class="command-name"><h3>/equip</h3></div>
+				<p>Attempt to equip a weapon.</p>
+			</div>
+			<div id="help" class="special-block">
+				<div class="command-name"><h3>/help</h3></div>
+				<p>Show basic information on how to use the bot.</p>
+			</div>
+			<div id="info" class="special-block">
+				<div class="command-name"><h3>/info</h3></div>
+				<p>Show details for specified item.</p>
+			</div>
+			<div id="inventory" class="special-block">
+				<div class="command-name"><h3>/inventory</h3></div>
+				<p>Show all items possessed.</p>
+			</div>
+			<div id="leaderboard" class="special-block">
+				<div class="command-name"><h3>/leaderboard</h3></div>
+				<p>Show leaderboard for specified stat (EXP, gold balance, or alchemy tier).</p>
+			</div>
+			<div id="learn" class="special-block">
+				<div class="command-name"><h3>/learn</h3></div>
+				<p>Attempt to learn a Fight Technique or Qi Method.</p>
+			</div>
+			<div id="pills" class="special-block">
+				<div class="command-name"><h3>/pills</h3></div>
+				<p>Show information on all refinable pills; provides option to refine a pill selected from the dropdown menu. Pill refinement attempts cost energy.</p>
+			</div>
+			<div id="profile" class="special-block">
+				<div class="command-name"><h3>/profile</h3></div>
+				<p>Show profile card.</p>
+			</div>
+			<div id="rank" class="special-block">
+				<div class="command-name"><h3>/rank</h3></div>
+				<p>Show cultivation experience rank card.</p>
+			</div>
+			<div id="ranked match" class="special-block">
+				<div class="command-name"><h3>/ranked match</h3></div>
+				<p>Initiates a random ranked PVP match with another user. After 5 free daily matches, costs 36 energy.</p>
+			</div>
+			<div id="ranked profile" class="special-block">
+				<div class="command-name"><h3>/ranked profile</h3></div>
+				<p>Show ranked PVP stats.</p>
+			</div>
+			<div id="ranked top" class="special-block">
+				<div class="command-name"><h3>/ranked top</h3></div>
+				<p>Show ranked PVP leaderboard.</p>
+			</div>
+			<div id="search" class="special-block">
+				<div class="command-name"><h3>/search</h3></div>
+				<p>Search for herbs; add discovered herbs to inventory.</p>
+			</div>
+			<div id="sell" class="special-block">
+				<div class="command-name"><h3>/sell</h3></div>
+				<p>Sell item(s) in user's inventory.</p>
+			</div>
+			<div id="shop" class="special-block">
+				<div class="command-name"><h3>/shop</h3></div>
+				<p>Open up the shop menu which shows all purchasable items and their costs.</p>
+			</div>
+			<div id="suggest" class="special-block">
+				<div class="command-name"><h3>/suggest</h3></div>
+				<p>Suggest creation of a show-specific channel. After 3 different people react, staff are notified.</p>
+			</div>
+			<div id="swallow" class="special-block">
+				<div class="command-name"><h3>/swallow</h3></div>
+				<p>Attempt to swallow a flame.</p>
+			</div>
+			<div id="unlearn" class="special-block">
+				<div class="command-name"><h3>/unlearn</h3></div>
+				<p>Attempt to unlearn a Fight Technique or Qi Method that has already been learned. Once unlearned, it returns to your inventory.</p>
+			</div>
+		</div>
 	</div>
 </body>
 </html>

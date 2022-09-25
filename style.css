@@ -39,6 +39,28 @@ a {
 	color: #9bc1e0;
 }
 
+input {
+	background: none;
+	border: 0;
+	outline: 0;
+	border-bottom: 1px solid white;
+	font-family: "Helvetica Neue";
+	font-size: 18px;
+}
+
+input[type="text"], input::placeholder {
+	color: white;
+}
+
+input::focus {
+	background-color: transparent;
+	color: white;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
 button {
 	/* Remove button default styling */
 	background: none;
@@ -74,6 +96,12 @@ th, td {
 	font-size: 24px;
 	font-weight: bold;
 	text-decoration: none;
+}
+
+.command-name h3 {
+	font-family: monospace;
+	font-size: 20px;
+	margin-bottom: 0px;
 }
 
 .special-block {
@@ -123,10 +151,6 @@ th, td {
 	font-weight: bold;
 	color: white;
 	font-size: 20px;
-}
-
-input:focus, textarea:focus {
-    background: #eee;
 }
 
 #nav {

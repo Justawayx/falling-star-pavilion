@@ -57,3 +57,29 @@ function topNavToggle() {
     x.style.display = "block";
   }
 }
+
+// Commands search bar
+function commandSearch() {  
+  var filter = document.getElementById('command-search').value.toLowerCase();
+  var children = document.getElementById("commands").children;
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < children.length; i++) {
+    command_name = children[i].id;
+    if (command_name.indexOf(filter) > -1) {
+      children[i].style.display = "";
+    } else {
+      children[i].style.display = "none";
+    }
+  }
+}
+
+function commandClear() {
+	var input = document.getElementById('command-search');
+	input.value = '';
+	
+	var children = document.getElementById("commands").children;
+  for (i = 0; i < children.length; i++) {
+    children[i].style.display = "";
+  }
+}

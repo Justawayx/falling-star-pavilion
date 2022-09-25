@@ -1,0 +1,34 @@
+	Staff only	Basic Description	Detailed Description
+admin	Y		
+alchemy		Show alchemy rank card.	
+balance		Show balance for specified currency (default is gold).	
+beast hunt		Attempt to hunt a beast, granting reward for successful hunt. Costs 12 energy.	
+breakthrough		Attempt breakthrough to the next sublevel.	
+buy		Buy item(s) if it is purchasable and user has sufficient gold.	
+consume		Attempt to consume a pill.	
+cultivate		Prompt a question that grants EXP if answered correctly.	
+daily		Request daily stipend (reward amount is randomized and increases with cultivation class.)	
+demote	Y		
+energy		Show current amount of energy.	
+equip		Attempt to equip a weapon.	
+exp	Y		
+factionsmenu	Y		
+help		Show basic information on how to use the bot.	
+info		Show details for specified item.	
+inventory		Show all items possessed.	
+leaderboard		Show leaderboard for specified stat (EXP, gold balance, or alchemy tier).	
+learn		Attempt to learn a Fight Technique or Qi Method.	
+money	Y		
+pills		Show information on all refinable pills; provides option to refine a pill selected from the dropdown menu. Pill refinement attempts cost energy.	
+profile		Show profile card.	
+promote	Y		
+rank		Show cultivation experience rank card.	
+ranked match		Initiates a random ranked PVP match with another user. After 5 free daily matches, costs 36 energy.	
+ranked profile		Show ranked PVP stats.	
+ranked top		Show ranked PVP leaderboard.	
+search		Search for herbs; add discovered herbs to inventory.	
+sell		Sell item(s) in user's inventory.	
+shop		Open up the shop menu which shows all purchasable items and their costs.	
+suggest		Suggest creation of a show-specific channel. After 3 different people react, staff are notified.	
+swallow		Attempt to swallow a flame.	
+unlearn		Attempt to unlearn a Fight Technique or Qi Method that has already been learned. Once unlearned, it returns to your inventory.	
